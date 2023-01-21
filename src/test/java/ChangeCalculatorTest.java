@@ -1,3 +1,4 @@
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -8,9 +9,10 @@ public class ChangeCalculatorTest {
     private static ChangeCalculator testCalculator;
 
     @BeforeAll
-    public static void setup(){
+    public static void init(){
         testCalculator = new ChangeCalculator(1,2,3,4,5);
     }
+
 
     @Test
     public void testChange1(){
