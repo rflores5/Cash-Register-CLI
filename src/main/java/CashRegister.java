@@ -118,7 +118,7 @@ public class CashRegister {
         return output;
     }
 
-    //Uses ChangeCalculator class to determine if exact change can be given and returns it
+    //Uses org.main.ChangeCalculator class to determine if exact change can be given and returns it
     public String getChange(String amount){
         int change = Integer.parseInt(amount);
         String error = "Unable to provide exact change";

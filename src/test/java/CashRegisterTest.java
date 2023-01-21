@@ -1,18 +1,21 @@
+
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+
 
 public class CashRegisterTest {
 
     private static CashRegister testRegister;
 
     @BeforeEach
-    public void setup(){
+    public void init(){
         testRegister = new CashRegister();
         String seedPutCommand = "put 1 2 3 4 5";
         testRegister.parseInput(seedPutCommand);
